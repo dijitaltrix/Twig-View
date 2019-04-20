@@ -260,10 +260,10 @@ class Twig implements \ArrayAccess
         return new \ArrayIterator($this->defaultVariables);
     }
 
+
     /********************************************************************************
      * ADR Responder compatibility
      *******************************************************************************/
-
     /**
      * Allow more direct access to loader exists function
      * Provides compatibility with Scythe View in Responder classes
@@ -271,7 +271,19 @@ class Twig implements \ArrayAccess
      * @return boolean
      */
     public function exists($path)
-	{
-		return $this->loader->exists($path);
-	}
+    {
+        return $this->loader->exists($path);
+    }
+
+    /**
+     * Allow more direct access to loader addPath function
+     * Provides compatibility with in Service classes
+     *
+     * @return boolean
+     */
+    public function addNamespace($name, $path)
+    {
+        return $this->loader->addPath($path, $name);
+    }
+
 }
