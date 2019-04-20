@@ -1,5 +1,5 @@
 {
-    "name": "slim/twig-view",
+    "name": "dijitaltrix/twig-view",
     "type": "library",
     "description": "Slim Framework 3 view helper built on top of the Twig 2 templating component",
     "keywords": ["slim","framework","view","template","twig"],
@@ -10,6 +10,10 @@
             "name": "Josh Lockhart",
             "email": "hello@joshlockhart.com",
             "homepage": "http://joshlockhart.com"
+        },
+        {
+            "name": "Ian Grindley",
+            "email": "ian@dijix.com"
         }
     ],
     "require": {
